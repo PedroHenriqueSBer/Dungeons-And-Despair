@@ -55,6 +55,11 @@ export const SigninForms = styled.form`
             transition: 0.5s;
         }
     }
+    .btnField{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 10px;
+    }
     .LinkText{
         width: max-content;
         text-align: center;

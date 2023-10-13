@@ -11,7 +11,7 @@ export const Header = () => {
             name: 'Inventory'
         },
         {
-            path: '/',
+            path: '/pdfs',
             name: 'Pdfs'
         },
         {
@@ -20,7 +20,7 @@ export const Header = () => {
         }
     ]
     return (
-        <Container>
+        <Container key={0}>
             <button 
                 className="iconBtn" 
                 onClick={() => navigate('/')}>

@@ -1,1 +1,2 @@
 module '*png'
+module '*pdf'

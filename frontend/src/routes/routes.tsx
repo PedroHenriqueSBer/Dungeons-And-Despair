@@ -3,6 +3,7 @@ import { Home } from '../pages/Home'
 import { Signin } from '../pages/Signin'
 import { Login } from '../pages/Login'
 import { Account } from '../pages/Account'
+import { Pdfs } from '../pages/pdfs'
 
 export const Router = () => (
     <BrowserRouter>
@@ -11,6 +12,7 @@ export const Router = () => (
             <Route path='signin' element={<Signin />} />
             <Route path='login' element={<Login />} />
             <Route path='account' element={<Account />} />
+            <Route path='pdfs' element={<Pdfs />} />
         </Routes>
     </BrowserRouter>
 )
