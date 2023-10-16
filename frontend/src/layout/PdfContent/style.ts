@@ -20,7 +20,7 @@ export const Container = styled.div<{
     border-radius: 5px;
     width: 30rem;
     height: 40rem;
-    box-shadow: 5px 5px 5px ${theme.overflow};
+    box-shadow: 5px 5px 5px ${theme.input};
     & .content{
         opacity: 0%;
         transition: 0.2s;

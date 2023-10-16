@@ -4,6 +4,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import HttpsIcon from '@mui/icons-material/Https';
 import { Button } from './../../layout/Button/index';
 import { useNavigate } from "react-router-dom";
+import { Container } from "./style";
 
 export const Signin = () => {
     const navigate = useNavigate()
@@ -13,37 +14,39 @@ export const Signin = () => {
     }
 
     return (
-        <SigninForms onSubmit={handleSubmit}>
-            <h1>Signin</h1>
-            <div className="FormField">
-                <div>
-                    <EmailIcon />
+        <Container>
+            <SigninForms onSubmit={handleSubmit}>
+                <h1>Signin</h1>
+                <div className="FormField">
+                    <div>
+                        <EmailIcon />
+                    </div>
+                    <input type="text" placeholder="E-mail" />
                 </div>
-                <input type="text" placeholder="E-mail" />
-            </div>
-            <div className="FormField">
-                <div>
-                    <PersonIcon />
+                <div className="FormField">
+                    <div>
+                        <PersonIcon />
+                    </div>
+                    <input type="text" placeholder="Name" />
                 </div>
-                <input type="text" placeholder="Name" />
-            </div>
-            <div className="FormField">
-                <div>
-                    <HttpsIcon />
+                <div className="FormField">
+                    <div>
+                        <HttpsIcon />
+                    </div>
+                    <input type="text" placeholder="Password" />
                 </div>
-                <input type="text" placeholder="Password" />
-            </div>
-            <div className="FormField">
-                <div>
-                    <HttpsIcon />
+                <div className="FormField">
+                    <div>
+                        <HttpsIcon />
+                    </div>
+                    <input type="text" placeholder="Confirm Password" />
                 </div>
-                <input type="text" placeholder="Confirm Password" />
-            </div>
-            <Button
-                type="submit"
-                width="100%"
-                primary
-                text="Signin"/>
-        </SigninForms>
+                <Button
+                    type="submit"
+                    width="100%"
+                    primary
+                    text="Signin"/>
+            </SigninForms>
+        </Container>
     )
 }

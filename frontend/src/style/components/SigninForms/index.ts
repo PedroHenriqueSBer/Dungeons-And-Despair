@@ -12,15 +12,15 @@ const theme = {
 }
 
 export const SigninForms = styled.form`
-    margin-top: 20rem;
     width: 33rem;
     margin: 0 auto;
-    height: max-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: left;
     row-gap: 10px;
     h1{
+        margin-top: 0;
         align-self: center;
         font-family: 12px;
     }

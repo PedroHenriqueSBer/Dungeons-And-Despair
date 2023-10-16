@@ -4,45 +4,48 @@ import PersonIcon from '@mui/icons-material/Person';
 import HttpsIcon from '@mui/icons-material/Https';
 import { Button } from './../../layout/Button/index';
 import { Header } from "../../components/Header";
+import { Container } from "./styles";
 
 export const Account = () => {
     return (
         <>
             <Header />
-            <SigninForms>
-                <h1>Account</h1>
-                <div className="FormField">
-                    <div>
-                        <EmailIcon />
-                    </div>
-                    <input type="text" placeholder="E-mail" />
-                </div>
-                <div className="btnField">
+            <Container>
+                <SigninForms>
+                    <h1>Account</h1>
                     <div className="FormField">
                         <div>
-                            <PersonIcon />
+                            <EmailIcon />
                         </div>
-                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="E-mail" />
                     </div>
-                    <Button
-                        width="100%"
-                        primary
-                        text="Alterar"/>
-                </div>
-                <div className="btnField">
-                    <div className="FormField">
-                        <div>
-                            <HttpsIcon />
+                    <div className="btnField">
+                        <div className="FormField">
+                            <div>
+                                <PersonIcon />
+                            </div>
+                            <input type="text" placeholder="Name" />
                         </div>
-                        <input type="text" placeholder="Password" />
+                        <Button
+                            width="100%"
+                            primary
+                            text="Alterar"/>
                     </div>
-                    <Button
-                        width="100%"
-                        primary
-                        text="Alterar"/>
-                </div>
+                    <div className="btnField">
+                        <div className="FormField">
+                            <div>
+                                <HttpsIcon />
+                            </div>
+                            <input type="text" placeholder="Password" />
+                        </div>
+                        <Button
+                            width="100%"
+                            primary
+                            text="Alterar"/>
+                    </div>
 
-            </SigninForms>
+                </SigninForms>
+            </Container>
         </>
     )
 }
