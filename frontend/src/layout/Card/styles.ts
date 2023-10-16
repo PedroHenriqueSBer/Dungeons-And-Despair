@@ -1,15 +1,5 @@
 import styled from "styled-components";
-
-const theme = {
-    background: '#FFF8F3',
-    content: '#FFECDE',
-    input: '#F5DECE',
-    overflowBackground: '#F6D9C4',
-    overflow: '#CFB099',
-    primary: '#A83030',
-    overflowPrimary: '#6A1010',
-    overflowBackgroundPrimary: '#902424',
-}
+import { theme } from "../../style/GlobalStyle";
 
 export const Container = styled.div<{
     width?: string
@@ -17,15 +7,12 @@ export const Container = styled.div<{
     border-radius: 10px;
     padding: 2rem;
     background: ${theme.content};
-    min-width: ${p => p.width === undefined? '10.5rem' : p.width};
-    box-shadow: 5px 5px 5px ${theme.input};
+    min-width: ${p => p.width === undefined? '16.5rem' : p.width};
+    box-shadow: 0px 0px 5px 3px ${theme.input};
     height: max-content;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    &:hover{
-        filter: brightness(0.96);
-    }
     h1{
         margin: -10px;
         padding: 0;

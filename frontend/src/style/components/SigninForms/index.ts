@@ -1,16 +1,5 @@
 import styled from "styled-components";
-
-const theme = {
-    background: '#FFF8F3',
-    content: '#FFECDE',
-    input: '#F5DECE',
-    overflowBackground: '#F6D9C4',
-    overflow: '#CFB099',
-    primary: '#A83030',
-    overflowPrimary: '#6A1010',
-    overflowBackgroundPrimary: '#902424',
-}
-
+import { theme } from "../../GlobalStyle";
 export const SigninForms = styled.form`
     width: 33rem;
     margin: 0 auto;
@@ -20,7 +9,7 @@ export const SigninForms = styled.form`
     align-items: left;
     row-gap: 10px;
     h1{
-        margin-top: 0;
+        margin: 0;
         align-self: center;
         font-family: 12px;
     }

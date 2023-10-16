@@ -7,7 +7,7 @@ export const Header = () => {
     const navigate = useNavigate()
     const Btns = [
         {
-            path: '/',
+            path: '/inventory',
             name: 'Inventory'
         },
         {

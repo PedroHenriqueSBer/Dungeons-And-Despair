@@ -1,15 +1,5 @@
 import styled from "styled-components";
-
-const theme = {
-    background: '#FFF8F3',
-    content: '#FFECDE',
-    input: '#F5DECE',
-    overflowBackground: '#F6D9C4',
-    overflow: '#CFB099',
-    primary: '#A83030',
-    overflowPrimary: '#6A1010',
-    overflowBackgroundPrimary: '#902424',
-}
+import { theme } from "../../style/GlobalStyle";
 
 export const Container = styled.div`
     position: absolute;

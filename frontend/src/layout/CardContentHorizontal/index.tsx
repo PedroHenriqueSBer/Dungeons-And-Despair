@@ -6,9 +6,9 @@ import { Card } from './../Card/index';
 
 export const CardContentHorizontal: React.FC<{
     title: string
-    onSearch: (el:React.ChangeEvent<HTMLInputElement>) => void
     BtnList?: {text: string,onClick: React.MouseEventHandler<HTMLButtonElement>}[]
     btnCardText: string
+    width?: string
     CardList: {
         img?: any
         title?: string
@@ -18,8 +18,8 @@ export const CardContentHorizontal: React.FC<{
     }[]
 }> = ({
     title,
-    onSearch,
     BtnList,
+    width,
     CardList,
     btnCardText
 }) => {
@@ -30,6 +30,16 @@ export const CardContentHorizontal: React.FC<{
         description?: string
         btnClick?: React.MouseEventHandler<HTMLButtonElement>
     }[]>(CardList)
+
+    const onSearch = (input: React.ChangeEvent<HTMLInputElement>) => {
+        setElements(() => {
+            const value = input.target.value
+            if(!value)
+                return CardList
+            return CardList.filter(card => card.title?.toLowerCase()?.includes(value.toLowerCase()))
+        })
+    }
+
     return(
         <Container>
             <header>
@@ -42,24 +52,25 @@ export const CardContentHorizontal: React.FC<{
                 </fieldset>
                 {BtnList && (
                     <>
-                        {BtnList.map(el => {
+                        {BtnList.map(el =>
                             <Button 
                                 text={el.text}
                                 onClick={el.onClick}
                                 primary/>
-                        })}
+                        )}
                     </>
                 )}
             </header>
             <div className="cardContents">
-                {elements && (
+                {elements.length > 0?(
                     <>
                         {elements.map((el,index) => <Card 
                             key={index} 
                             {...el} 
+                            width={width}
                             btnText={btnCardText}/>)}
                     </>
-                )}
+                ):(<>Não existe {title}</>)}
             </div>
         </Container>
     )

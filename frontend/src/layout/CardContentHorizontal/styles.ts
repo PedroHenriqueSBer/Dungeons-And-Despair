@@ -1,15 +1,5 @@
 import styled from "styled-components";
-
-const theme = {
-    background: '#FFF8F3',
-    content: '#FFECDE',
-    input: '#F5DECE',
-    overflowBackground: '#F6D9C4',
-    overflow: '#CFB099',
-    primary: '#A83030',
-    overflowPrimary: '#6A1010',
-    overflowBackgroundPrimary: '#902424',
-}
+import { theme } from "../../style/GlobalStyle";
 
 export const Container = styled.div<{
     width?: string
@@ -17,6 +7,8 @@ export const Container = styled.div<{
     width: ${p => p.width === undefined? '80%' : p.width};
     background: ${theme.content};
     padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px ${theme.overflow};
     header{
         gap: 1rem;
         display: flex;
