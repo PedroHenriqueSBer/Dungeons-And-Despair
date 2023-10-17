@@ -1,10 +1,9 @@
+
 import ReactDOM from 'react-dom/client';
-import { GlobalStyle } from './style/GlobalStyle';
-import { Router } from './routes/routes';
+import { App } from './app';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-    <>
-        <Router />
-        <GlobalStyle/>
-    </>
+    <userContextProvider>
+        <App />
+    </userContextProvider>
 );

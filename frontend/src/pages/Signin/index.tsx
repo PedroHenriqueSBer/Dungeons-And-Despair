@@ -1,9 +1,9 @@
-import { SigninForms } from "../../style/components/SigninForms"
 import EmailIcon from '@mui/icons-material/Email';
-import PersonIcon from '@mui/icons-material/Person';
 import HttpsIcon from '@mui/icons-material/Https';
-import { Button } from './../../layout/Button/index';
+import PersonIcon from '@mui/icons-material/Person';
 import { useNavigate } from "react-router-dom";
+import { SigninForms } from "../../style/components/SigninForms";
+import { Button } from './../../layout/Button/index';
 import { Container } from "./style";
 
 export const Signin = () => {
