@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DungeonsAndDespair.Models.Models
+{
+    public class User
+    {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public ICollection<Race>? SubscribedRaces { get; set; }
+        public ICollection<Race>? RaceTemplates { get; set; }
+        public ICollection<Class>? SubscribedClasses { get; set; }
+        public ICollection<ClassTemplates>? ClassTemplates { get; set; }
+    }
+}
