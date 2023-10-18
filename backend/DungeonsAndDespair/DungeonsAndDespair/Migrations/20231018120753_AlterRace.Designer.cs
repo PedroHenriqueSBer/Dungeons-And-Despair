@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DungeonsAndDespair.API.DataBase.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -12,9 +13,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DungeonsAndDespair.API.Migrations
 {
     [DbContext(typeof(DnDsprContext))]
-    partial class DnDsprContextModelSnapshot : ModelSnapshot
+    [Migration("20231018120753_AlterRace")]
+    partial class AlterRace
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
