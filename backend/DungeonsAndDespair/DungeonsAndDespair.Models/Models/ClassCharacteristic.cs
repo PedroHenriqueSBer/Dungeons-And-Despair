@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsAndDespair.Models.Models
+namespace DungeonsAndDespair.Aplication.Models
 {
     public class ClassCharacteristic
     {

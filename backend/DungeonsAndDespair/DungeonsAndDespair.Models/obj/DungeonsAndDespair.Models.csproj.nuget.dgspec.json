@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Legal Control\\Desktop\\trabai\\Estudes kapa kapa\\Repos\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\DungeonsAndDespair.Models.csproj": {}
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\DungeonsAndDespair.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Legal Control\\Desktop\\trabai\\Estudes kapa kapa\\Repos\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\DungeonsAndDespair.Models.csproj": {
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\DungeonsAndDespair.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Legal Control\\Desktop\\trabai\\Estudes kapa kapa\\Repos\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\DungeonsAndDespair.Models.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\DungeonsAndDespair.Models.csproj",
         "projectName": "DungeonsAndDespair.Models",
-        "projectPath": "C:\\Users\\Legal Control\\Desktop\\trabai\\Estudes kapa kapa\\Repos\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\DungeonsAndDespair.Models.csproj",
-        "packagesPath": "C:\\Users\\Legal Control\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Legal Control\\Desktop\\trabai\\Estudes kapa kapa\\Repos\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\obj\\",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\DungeonsAndDespair.Models.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Dungeons-And-Despair\\backend\\DungeonsAndDespair\\DungeonsAndDespair.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Legal Control\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

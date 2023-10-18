@@ -1,0 +1,11 @@
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\bin\Debug\net6.0\DungeonsAndDespair.Aplication.deps.json
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\bin\Debug\net6.0\DungeonsAndDespair.Aplication.dll
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\bin\Debug\net6.0\DungeonsAndDespair.Aplication.pdb
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\obj\Debug\net6.0\DungeonsAndDespair.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\obj\Debug\net6.0\DungeonsAndDespair.Aplication.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\obj\Debug\net6.0\DungeonsAndDespair.Aplication.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\obj\Debug\net6.0\DungeonsAndDespair.Aplication.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\obj\Debug\net6.0\DungeonsAndDespair.Aplication.dll
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\obj\Debug\net6.0\refint\DungeonsAndDespair.Aplication.dll
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\obj\Debug\net6.0\DungeonsAndDespair.Aplication.pdb
+C:\Users\pedro\OneDrive\Documentos\GitHub\Dungeons-And-Despair\backend\DungeonsAndDespair\DungeonsAndDespair.Models\obj\Debug\net6.0\ref\DungeonsAndDespair.Aplication.dll

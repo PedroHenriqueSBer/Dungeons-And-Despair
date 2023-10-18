@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DungeonsAndDespair.API.props" />
+</Project>
