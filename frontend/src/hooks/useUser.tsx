@@ -1,40 +1,40 @@
-import { ReactNode, createContext, useState } from "react";
+import { ReactNode, createContext, useContext, useEffect, useState } from "react";
 
-interface user{
-    id?: number,
+interface User{
+    id: string,
     name: string,
     email: string,
     password: string
 }
 
-interface userProps{
-    user:user
-    setUser:React.Dispatch<React.SetStateAction<user>>
-    users:user[]
-    setUsers:React.Dispatch<React.SetStateAction<user[]>>
-}
-
-const userContext = createContext<userProps>({} as userProps)
-
-const [user,setUser] = useState<user>({
-    id: 0,
-    name: '',
-    email: '',
-    password: ''
-})
-const [users,setUsers] = useState<user[]>([])
-
-export const userContextProvider = ({
-    children
-}:{
+interface UserProviderProps{
     children: ReactNode
-}) => {
-    return <userContext.Provider value={{
-        user,
-        setUser,
-        users,
-        setUsers
-    }}>
-        {children}
-    </userContext.Provider>
 }
+
+interface UserContextProps{
+    user: User,
+    setUser: React.Dispatch<React.SetStateAction<User>>
+}
+
+const UserContext = createContext<UserContextProps>(
+    {} as UserContextProps
+);
+
+export function UserProviderContext({children}: UserProviderProps) {
+    const [user, setUser] = useState<User>({} as User);
+
+    useEffect(()=>{
+
+    },[])
+
+    return (
+        <UserContext.Provider value={{
+            user,
+            setUser
+        }}>
+            {children}
+        </UserContext.Provider>
+    )
+}
+
+export const useUser = () => useContext(UserContext);

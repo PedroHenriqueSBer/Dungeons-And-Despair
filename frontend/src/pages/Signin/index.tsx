@@ -5,41 +5,83 @@ import { useNavigate } from "react-router-dom";
 import { SigninForms } from "../../style/components/SigninForms";
 import { Button } from './../../layout/Button/index';
 import { Container } from "./style";
+import { useState } from 'react';
 
 export const Signin = () => {
     const navigate = useNavigate()
 
     const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
-        navigate('/')
+        event.preventDefault()
+        console.log(newUser)
+        //navigate('/')
     }
 
+    interface SigninUser{
+        name: string,
+        email: string,
+        password: string,
+        confirmPassword: string
+    }
+
+    const [newUser, setNewUser] = useState<SigninUser>({
+        name: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+    })
+
+    const Erros = [
+        false,
+        false,
+        false,
+        false
+    ]
+
+    const ErrosMessage = [
+        '',
+        '',
+        '',
+        ''
+    ]
     return (
         <Container>
             <SigninForms onSubmit={handleSubmit}>
                 <h1>Signin</h1>
-                <div className="FormField">
+                <div className={Erros[0]? 'error FormField' : 'FormField'}>
                     <div>
                         <EmailIcon />
                     </div>
-                    <input type="text" placeholder="E-mail" />
+                    <input name='email' defaultValue={newUser.email} onChange={el => newUser.email = el.target.value} type="text" placeholder="E-mail" />
+                    <span className='Error'>
+                        {ErrosMessage[0]}
+                    </span>
                 </div>
-                <div className="FormField">
+                <div className={Erros[1]? 'error FormField' : 'FormField'}>
                     <div>
                         <PersonIcon />
                     </div>
-                    <input type="text" placeholder="Name" />
+                    <input name='name' defaultValue={newUser.name} onChange={el => newUser.name = el.target.value} type="text" placeholder="Name" />
+                    <span className='Error'>
+                        {ErrosMessage[1]}
+                    </span>
                 </div>
-                <div className="FormField">
+                <div className={Erros[1]? 'error FormField' : 'FormField'}>
                     <div>
                         <HttpsIcon />
                     </div>
-                    <input type="text" placeholder="Password" />
+                    <input name='password' defaultValue={newUser.password} onChange={el => newUser.password = el.target.value} type="text" placeholder="Password" />
+                    <span className='Error'>
+                        {ErrosMessage[2]}
+                    </span>
                 </div>
-                <div className="FormField">
+                <div className={Erros[1]? 'error FormField' : 'FormField'}>
                     <div>
                         <HttpsIcon />
                     </div>
-                    <input type="text" placeholder="Confirm Password" />
+                    <input name='confirmPassword' defaultValue={newUser.confirmPassword} onChange={el => newUser.confirmPassword = el.target.value} type="text" placeholder="Confirm Password" />
+                    <span className='Error'>
+                        {ErrosMessage[3]}
+                    </span>
                 </div>
                 <Button
                     type="submit"

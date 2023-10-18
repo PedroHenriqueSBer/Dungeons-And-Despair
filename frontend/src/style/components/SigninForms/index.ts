@@ -43,7 +43,22 @@ export const SigninForms = styled.form`
             background: none;
             transition: 0.5s;
         }
+        span{
+            display: none;
+        }
+        &.error{
+            margin-bottom: 2rem;
+            border: 1px solid ${theme.primary};
+            span{
+                display: flex;
+                position: absolute;
+                font-size: 0.7rem;
+                margin-top: 4rem;
+                margin-left: 1rem;
+            }
+        }
     }
+    
     .btnField{
         display: grid;
         grid-template-columns: 3fr 1fr;
