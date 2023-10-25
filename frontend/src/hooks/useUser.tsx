@@ -1,4 +1,5 @@
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
+import { userController } from "../controller/User";
 
 interface User{
     id: string,
@@ -24,7 +25,9 @@ export function UserProviderContext({children}: UserProviderProps) {
     const [user, setUser] = useState<User>({} as User);
 
     useEffect(()=>{
-
+        const id = localStorage.getItem('userId')
+        if(id !== null)
+            userController.GetUserById(id).then(setUser).catch(() => {localStorage.removeItem('userId')})
     },[])
 
     return (

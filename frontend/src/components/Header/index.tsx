@@ -1,11 +1,19 @@
-import { Container } from "./styles"
-import { Button } from './../../layout/Button/index';
 import { useNavigate } from "react-router";
-import icon from './../../assets/icon.png'
+import { useUser } from "../../hooks/useUser";
+import icon from './../../assets/icon.png';
+import { Button } from './../../layout/Button/index';
+import { Container } from "./styles";
 
 export const Header = () => {
     const navigate = useNavigate()
-    const Btns = [
+    const {user} = useUser()
+    const Btns = user.id == undefined? 
+    [
+        {
+            path: '/signin',
+            name: 'Signin'
+        }
+    ] : [
         {
             path: '/inventory',
             name: 'Inventory'

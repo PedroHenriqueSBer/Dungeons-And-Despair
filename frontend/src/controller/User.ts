@@ -1,7 +1,7 @@
 import { api } from "./api"
 
-const getUsers = async () => {
-    return await api.get('/User')
+const GetUserById = async (id: string) => {
+    return await api.get(`/User/${id}`)
         .then(data => data)
         .catch(data => data)
 }
@@ -17,6 +17,6 @@ const createUser = async (input:{
 }
 
 export const userController = {
-    getUsers,
+    GetUserById,
     createUser
 }
