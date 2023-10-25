@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../GlobalStyle";
+import { theme } from "../GlobalStyle";
 export const SigninForms = styled.form`
     width: 33rem;
     margin: 0 auto;

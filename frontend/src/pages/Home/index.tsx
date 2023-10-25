@@ -1,8 +1,8 @@
 
-import { Header } from "../../components/Header"
+import { Header } from "../../components/Header";
 import { Accordion } from "../../layout/Accordion";
 import { Button } from "../../layout/Button";
-import { CreateForms, CreateFormsGrid } from "../../style/components/CreateForms";
+import { CreateForms, CreateFormsGrid } from "../../style/CreateForms";
 import { Container } from "./styled";
 
 
