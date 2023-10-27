@@ -34,6 +34,16 @@ export const SigninForms = styled.form`
                 height: 2rem;
             }
         }
+        .visible{
+            height: 100%;
+            width: 3rem;
+            background: none;
+            border: 0;
+            filter: brightness(0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         input{
             padding: 0;
             margin: 0;

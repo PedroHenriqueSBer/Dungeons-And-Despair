@@ -36,6 +36,9 @@ export const GlobalStyle = createGlobalStyle`
             opacity: 0.7;
         }
     }
+    button{
+        cursor: pointer;
+    }
     .iconBtn{
         margin: 0 1rem;
         border-radius: 100%;
