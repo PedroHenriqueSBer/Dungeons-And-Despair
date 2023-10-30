@@ -19,10 +19,17 @@ export const Signin = () => {
         password: string,
         ConfirmPassword: string
     }
+    const snackbar = (msg:string) => console.log(msg)
     const handleSigninSubmit = (e:input) => {
         setIsLoading(true)
-        if(e.mail)
-        console.log(e)
+        if(e.mail.length < 0||e.name.length < 0||e.password.length < 0||e.ConfirmPassword.length < 0)
+            return snackbar('Campos não preenchidos')
+        if(e.password.length !== e.ConfirmPassword.length)
+            return snackbar('As senhas estão diferentes')
+        if(e.password.length < 8)
+            return snackbar('A senha precisa ter no mínimo 8 caracteres')
+        if(e.name.length < 4)
+            return snackbar('A senha precisa ter no mínimo 4 caracteres')
         reset()
     } 
     const { setIsLoading } = useLoading()
