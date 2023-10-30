@@ -1,5 +1,5 @@
 import React, { ReactNode, createContext, useContext, useState } from "react";
-import { LoadScreen } from "./styled";
+import { LoadScreen, Loading } from "./styled";
 
 interface ContextProps{
     isLoading: boolean,
@@ -16,8 +16,8 @@ export const LoadingContextProvider: React.FC<{
     const [isLoading,setIsLoading] = useState<boolean>(false)
     return (
         <LoadingContext.Provider value={{isLoading,setIsLoading}}>
-            <LoadScreen>
-                <span></span>
+            <LoadScreen open={isLoading}>
+                <Loading />
             </LoadScreen>
             {children}
         </LoadingContext.Provider>

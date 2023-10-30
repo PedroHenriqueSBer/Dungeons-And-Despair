@@ -8,20 +8,25 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Button } from "../../layout/Button";
 import { useState } from "react";
 import { useForm } from 'react-hook-form';
+import { useLoading } from "../../hooks/loading";
 
 export const Signin = () => {
 
     const [isVisible,setIsVisible] = useState<boolean[]>([false,false])
-    const handleSigninSubmit = (e:any) => {
-        console.log(e)
-        reset()
-    } 
-    const [defaultValues] = useState<{
+    interface input{
         name: string,
         mail: string,
         password: string,
         ConfirmPassword: string
-    }>({
+    }
+    const handleSigninSubmit = (e:input) => {
+        setIsLoading(true)
+        if(e.mail)
+        console.log(e)
+        reset()
+    } 
+    const { setIsLoading } = useLoading()
+    const [defaultValues] = useState<input>({
         name: '',
         mail: '',
         password: '',
